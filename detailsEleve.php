@@ -1,5 +1,7 @@
 <?php
 require 'tabEleve.php';
+$titleHeader = "Details sur l'élève";
+require './partials/header.php';
 if (isset($_GET['eleve1'])) {?>
     <ul>
         <li>age: <?= $promo[0][2]?></li>
@@ -32,3 +34,4 @@ else {?>
     <a href="/index.php">Home</a>
 <?php
 }
+require "./partials/footer.php";
